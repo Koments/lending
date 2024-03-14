@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/bebasneue/BebasNeue\ Bold.otf') format('otf')
+}
+
+body {
+    font-family: 'BebasNeue', sans-serif !important;
+    width: 100%;
+    height: 100%;
+    background-color: #FBFBFB !important;
+}
+
+.app {
+    height: 100vh;
+}
+
+.app__container {
+    width: 1140px;
+    margin: 0 auto;
+    
+}
+
+.banner {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.banner__title {
+    font-size: 21px;
+}
+
+.banner__separator {
+    height: 30px;
+    width: 1px;
+    margin: 0 10px;
+}
+
+.banner__text {
+    font-size: 21px;
+}
+
+.area {
+    height: 440px;
+
+}
+
+.offers__text {
+    font-size: 29px;
+    margin-bottom: 30px;
+}
+
+.offers__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+.offers__column {
+    width: 360px;
+    height: 264px;
+    background: linear-gradient(to top, #f0f0f0 85%, #FBFBFB 85%);
+}
+
+.item-price {
+    width: 240px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+.item-price__additional__best {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #FFB800;
+    font-size: 12px;
+    width: 80px;
+}
+
+.item-price__additional__sale{
+    position: absolute;
+    left: -20px;
+    width: 75px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    transform: rotate(316deg);
+    top: 0px;
+}
+
+.item-price__period {
+    font-size: 12px;
+    padding-bottom: 7px;
+}
+
+.item-price__previous {
+    color: #929292;
+}
+
+.crossed {
+    text-decoration: line-through;
+}
+
+.item-button__handler {
+    width: 190px;
+    background: linear-gradient(to bottom, #130999 0%, #174D8F 25%, #1A7F87 50%, #1C9E83 75%, #1DAA81 100%);
+    height: 50px;
+    border-radius: 50px;
+}
+
+.item-button{
+    position: relative;
+
+}
+
+.btn__img{
+    position: absolute;
+    left: 147px;
+    top: 9px;
+    background-color: white;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+}
+
+.banner__info {
+    font-size: 14px;
+}
+
+.arrow_top {
+    display: none;
+    position: absolute;
+    width: 160px;
+    height: 170px;
+    top: 52px;
+    right: 20px;
+    background-color: #3683F7;
+    animation: moveArrow 2s ease-in-out infinite alternate; 
+}
+
+.arrow_bottom {
+    display: none;
+    position: absolute;
+    width: 160px;
+    height: 170px;
+    bottom: 94px;
+    left: 20px;
+    background-color: #3683F7;
+    animation: moveArrow 2s ease-in-out infinite alternate; 
+}
+
+@keyframes moveArrow {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(20px); } 
+}
+
+.arrow__container {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+.arrow__container-bottom {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.arrow__title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.arrow__text {
+    font-size: 15px;
+}
+
+.arrow_top::before,
+.arrow_top::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 120px;
+    width: 50%;
+    background: linear-gradient(to top left, transparent 50%, #FBFBFB 50%, #FBFBFB 50%, #FBFBFB 50%);
+}
+
+.arrow_top::after {
+    right: -1px;
+    transform: scaleX(-1);
+}
+
+.arrow_bottom::before,
+.arrow_bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 120px;
+    width: 50%;
+    background: linear-gradient(to bottom left, transparent 50%, #FBFBFB 50%, #FBFBFB 50%, #FBFBFB 50%);
+}
+
+.arrow_bottom::after {
+    right: -1px;
+    transform: scaleX(-1);
+}
