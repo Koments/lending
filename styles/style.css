@@ -17,7 +17,7 @@ body {
 .app__container {
     width: 1140px;
     margin: 0 auto;
-    
+
 }
 
 .banner {
@@ -79,7 +79,7 @@ body {
     width: 80px;
 }
 
-.item-price__additional__sale{
+.item-price__additional__sale {
     position: absolute;
     left: -20px;
     width: 75px;
@@ -103,27 +103,25 @@ body {
     text-decoration: line-through;
 }
 
-.item-button__handler {
+.item-button {
+    position: relative;
     width: 190px;
     background: linear-gradient(to bottom, #130999 0%, #174D8F 25%, #1A7F87 50%, #1C9E83 75%, #1DAA81 100%);
     height: 50px;
     border-radius: 50px;
-}
-
-.item-button{
-    position: relative;
+    cursor: pointer;
 
 }
 
-.btn__arrow{
-    position: absolute;
-    left: 147px;
-    top: 9px;
+.item-button__text {
+    padding: 3px 0 0 18px;
+}
+
+.btn__arrow {
     background-color: white;
     border-radius: 25px;
     width: 30px;
     height: 30px;
-    padding: 2px;
     text-align: center;
     font-size: 17px;
 }
@@ -140,7 +138,7 @@ body {
     top: 52px;
     right: 20px;
     background-color: #3683F7;
-    animation: moveArrow 2s ease-in-out infinite alternate; 
+    animation: moveArrow 2s ease-in-out infinite alternate;
 }
 
 .arrow_bottom {
@@ -151,12 +149,17 @@ body {
     bottom: 94px;
     left: 20px;
     background-color: #3683F7;
-    animation: moveArrow 2s ease-in-out infinite alternate; 
+    animation: moveArrow 2s ease-in-out infinite alternate;
 }
 
 @keyframes moveArrow {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(20px); } 
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
 }
 
 .arrow__container {

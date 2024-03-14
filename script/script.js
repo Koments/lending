@@ -18,9 +18,9 @@ function callback() {
                     <div class="item-offers d-flex flex-column justify-content-between align-items-center">
                         <div class="item-price d-flex flex-column justify-content-center align-items-center">
                             ${e.is_best ?
-                            `<div class="item-price__additional__best fw-bold">Best Value</div>` :
-                            e.price_key.indexOf('%') > -1 ?
-                            `<div class="item-price__additional__sale"><div class="item-price__additional__value">50% </div> <div class=class="item-price__additional__text">OFF</div></div>` : ``}
+                    `<div class="item-price__additional__best fw-bold">Best Value</div>` :
+                    e.price_key.indexOf('%') > -1 ?
+                        `<div class="item-price__additional__sale"><div class="item-price__additional__value">50% </div> <div class=class="item-price__additional__text">OFF</div></div>` : ``}
                             <div class="item-actual-price d-flex align-items-end">
                                 <div class="item-price__value fw-bold fs-2">$${e.amount}</div>
                                 <div class="item-price__period fw-bold ">${e.name_display.indexOf('monthly') > -1 ? `/MD` : `/PER YEAR`}</div>
@@ -35,8 +35,8 @@ function callback() {
                             <div class="item-description__text fw-bold text-center">${e.name_display.replace(/.+Protection /g, '')}</div>
                         </div>
 
-                        <div class="item-button">
-                            <button class="item-button__handler text-white">DOWNLOAD</button>
+                        <div class="item-button d-flex justify-content-around align-items-center">
+                            <div class="item-button__text text-white">DOWNLOAD</div>
                             <div class='btn__arrow'>↓</div>
                         </div>
 
@@ -46,7 +46,7 @@ function callback() {
             `
         });
 
-        const downloadBtns = document.querySelectorAll(".item-button__handler");
+        const downloadBtns = document.querySelectorAll(".item-button");
         downloadBtns.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 if (navigator.userAgent.includes("Chrome")) {
