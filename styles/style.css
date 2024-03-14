@@ -115,7 +115,7 @@ body {
 
 }
 
-.btn__img{
+.btn__arrow{
     position: absolute;
     left: 147px;
     top: 9px;
@@ -123,7 +123,9 @@ body {
     border-radius: 25px;
     width: 30px;
     height: 30px;
-    padding: 6px;
+    padding: 2px;
+    text-align: center;
+    font-size: 17px;
 }
 
 .banner__info {

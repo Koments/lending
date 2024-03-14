@@ -37,7 +37,7 @@ function callback() {
 
                         <div class="item-button">
                             <button class="item-button__handler text-white">DOWNLOAD</button>
-                            <img class='btn__img' src="../images/upload.png" alt="upload" />
+                            <div class='btn__arrow'>↓</div>
                         </div>
 
                         <div></div>
